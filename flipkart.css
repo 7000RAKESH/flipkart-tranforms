@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin-right: 2rem;
+  margin-left: -1rem;
+}
+h1 img {
+  width: 100px;
+  background-color: white;
+}
+header input {
+  flex: 1;
+  width: 100%;
+  height: 1.8rem;
+  border: 0px solid black;
+  border-radius: 6px;
+  background-color: aliceblue;
+}
+nav {
+  flex: 1;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  background: white;
+  list-style: none;
+}
+nav i {
+  margin-right: 10px;
+  font-size: 12px;
+}
+nav li {
+  font-size: 13px;
+}
+
+section div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.6rem;
+}
+section div img {
+  width: 40px;
+}
+.products {
+  display: grid;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  gap: 1rem;
+}
+.products div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.4s linear;
+}
+.products div img {
+  object-fit: contain;
+  width: 90%;
+  height: 90%;
+}
+.products div:nth-child(1):hover {
+  transform: scale(1.1);
+}
+.products div:nth-child(2):hover {
+  transform: translatex(10px);
+}
+.products div:nth-child(3):hover {
+  transform: translatey(10px);
+}
+.products div:nth-child(4):hover {
+  transform: skew(10deg);
+}
+.products div:nth-child(5):hover {
+  transform: rotate(180deg);
+}
+.products div:nth-child(6):hover {
+  transform: rotatex(180deg);
+}
+.products div:nth-child(7):hover {
+  transform: rotatey(180deg);
+}
+.products div:nth-child(8):hover {
+  transform: rotatez(90deg);
+}
+.products div:nth-child(9):hover {
+  transform: skewY(10deg);
+}
+
+.products div:nth-child(10):hover {
+  transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0);
+}
